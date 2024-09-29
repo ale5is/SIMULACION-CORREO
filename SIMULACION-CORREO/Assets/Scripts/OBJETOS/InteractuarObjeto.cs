@@ -33,8 +33,7 @@ public class InteractuarObjeto : MonoBehaviour
                
                 if (Input.GetKey("e") && ObjetoTomado == null)
                 {
-                    
-                  
+
                     ObjetoTomado = hit.collider.gameObject;
                     ObjetoTomado.GetComponent<Rigidbody>().useGravity = false;
                     ObjetoTomado.GetComponent<Rigidbody>().isKinematic = true;
@@ -63,8 +62,6 @@ public class InteractuarObjeto : MonoBehaviour
                 Cargando=false;
             }
         }
-
-
     }
     private void ObjetoSeleccionado(Transform transform)
     {
@@ -73,7 +70,6 @@ public class InteractuarObjeto : MonoBehaviour
             transform.GetComponent<MeshRenderer>().material.color = Color.green;
             Detectado = transform.gameObject;
         }
-        
     }
 
     private void ObjetoDeseleccionado()
