@@ -355,6 +355,7 @@
 "Assets/Scripts/BandaDeTransporte/ControladorDeBanda.cs"
 "Assets/Scripts/Camara/ControladorDeCamara.cs"
 "Assets/Scripts/Jugador/ControlDeJugador.cs"
+"Assets/Scripts/OBJETOS/InteractuarObjeto.cs"
 "Assets/Scripts/OBJETOS/TomarObjeto.cs"
 -langversion:9.0
 
