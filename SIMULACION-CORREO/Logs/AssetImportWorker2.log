@@ -1,0 +1,1326 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.23f1 (dbb3f7c5b5c6) revision 14398455'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit ProfessionalWorkstation' Language: 'es' Physical Memory: 15437 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Administrator/Documents/GitHub/SIMULACION-CORREO/SIMULACION-CORREO
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+50197
+Successfully changed project path to: C:/Users/Administrator/Documents/GitHub/SIMULACION-CORREO/SIMULACION-CORREO
+C:/Users/Administrator/Documents/GitHub/SIMULACION-CORREO/SIMULACION-CORREO
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [10140] Host "[IP] 192.168.0.54 [Port] 0 [Flags] 2 [Guid] 3491086100 [EditorId] 3491086100 [Version] 1048832 [Id] WindowsEditor(7,KernelOS-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [10140] Host "[IP] 192.168.0.54 [Port] 0 [Flags] 2 [Guid] 3491086100 [EditorId] 3491086100 [Version] 1048832 [Id] WindowsEditor(7,KernelOS-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 5.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.23f1 (dbb3f7c5b5c6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Administrator/Documents/GitHub/SIMULACION-CORREO/SIMULACION-CORREO/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x1638)
+    Vendor:   ATI
+    VRAM:     7718 MB
+    Driver:   31.0.21912.14
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56052
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003179 seconds.
+- Loaded All Assemblies, in  0.250 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.223 seconds
+Domain Reload Profiling: 474ms
+	BeginReloadAssembly (79ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (99ms)
+		LoadAssemblies (78ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (97ms)
+			TypeCache.Refresh (97ms)
+				TypeCache.ScanAssembly (87ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (224ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (176ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (124ms)
+			ProcessInitializeOnLoadMethodAttributes (38ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.439 seconds
+Refreshing native plugins compatible for Editor in 1.57 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.495 seconds
+Domain Reload Profiling: 934ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (258ms)
+		LoadAssemblies (197ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (128ms)
+			TypeCache.Refresh (112ms)
+				TypeCache.ScanAssembly (101ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (495ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (361ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (288ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3096 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (57.0 KB). Loaded Objects now: 3557.
+Memory consumption went from 121.5 MB to 121.4 MB.
+Total: 2.767600 ms (FindLiveObjects: 0.233100 ms CreateObjectMapping: 0.190000 ms MarkObjects: 2.256400 ms  DeleteObjects: 0.087400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3290.791438 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/meat_with_bone.fbx
+  artifactKey: Guid(95a872cede847f043b611305167ec3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/meat_with_bone.fbx using Guid(95a872cede847f043b611305167ec3dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb9eca089ecc02d7fabd35171358a837') in 0.116537 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.020192 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/stone_fence_03.fbx
+  artifactKey: Guid(ced8328dcd6ff85449e524474b164944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/stone_fence_03.fbx using Guid(ced8328dcd6ff85449e524474b164944) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ce5f58d4c493a9a146b02524e75a02') in 0.010045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/table_01.fbx
+  artifactKey: Guid(9132b2a44c0e3684a92c1c63cc400b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/table_01.fbx using Guid(9132b2a44c0e3684a92c1c63cc400b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2971be8f370b917cea72b71b867986') in 0.009257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/tomato.fbx
+  artifactKey: Guid(ff67b2d0df360374eadb902749e92c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/tomato.fbx using Guid(ff67b2d0df360374eadb902749e92c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2045126cf12e8a8c21b8dda8a508a5a0') in 0.011418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.380148 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/tree_03.fbx
+  artifactKey: Guid(ce34fbf2a59d2854e8d9207554ecb954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/tree_03.fbx using Guid(ce34fbf2a59d2854e8d9207554ecb954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4554c40d733a09d0fd3f941f3ab15907') in 0.008947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/wooden_jar.fbx
+  artifactKey: Guid(2700e50a77a2d03439eeaa594d106219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/wooden_jar.fbx using Guid(2700e50a77a2d03439eeaa594d106219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde33b6622a523d9d6204a83b511beb8') in 0.010470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/wooden_box.fbx
+  artifactKey: Guid(b34f7c7f01bf0134fa973b0e0e80918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/wooden_box.fbx using Guid(b34f7c7f01bf0134fa973b0e0e80918d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50565bd451baa0683c4cded9942c069c') in 0.009715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/wooden_bowl_01.fbx
+  artifactKey: Guid(ef23afffcf505bc43a7557309717c1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/wooden_bowl_01.fbx using Guid(ef23afffcf505bc43a7557309717c1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f718d6d669e5c9917a67a0693be2449') in 0.007385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 3.191103 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market
+  artifactKey: Guid(bf2500a76bbc5fb4cb88ffb413a76d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market using Guid(bf2500a76bbc5fb4cb88ffb413a76d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823ed7b963a91d5924cd60e3affd1dd1') in 0.000395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.115286 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/anvil.fbx
+  artifactKey: Guid(735d4dedf0f26a94e96246dd7fa66c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/anvil.fbx using Guid(735d4dedf0f26a94e96246dd7fa66c01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9a7e8492fb5f383ec901d23cfc08ddd') in 0.009065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/shield_01.fbx
+  artifactKey: Guid(0e4398407680fda4c9ef81e02174b3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/shield_01.fbx using Guid(0e4398407680fda4c9ef81e02174b3c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638f2b38103f0b3d6613cd5215a3a32b') in 0.009039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/axe.fbx
+  artifactKey: Guid(8ab5ed643d71db440a2338820ca4fa91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/axe.fbx using Guid(8ab5ed643d71db440a2338820ca4fa91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49bd99ad5bf7c9ed18e6b7f3bcb0fd89') in 0.009128 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/one_handed_sword.fbx
+  artifactKey: Guid(0530f663dd1e3804cb6037eb642d449e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/one_handed_sword.fbx using Guid(0530f663dd1e3804cb6037eb642d449e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dafa56f60d5864b2345536b3ff6c66e1') in 0.009406 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/table_03.fbx
+  artifactKey: Guid(e161d11687078284aab116a597b89ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/table_03.fbx using Guid(e161d11687078284aab116a597b89ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5edfd2ecc16a204931d21c2a64b9d02c') in 0.009916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/spear.fbx
+  artifactKey: Guid(6c1f14ddf621b9b40a5a5f69f90404b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/spear.fbx using Guid(6c1f14ddf621b9b40a5a5f69f90404b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92482a58e0468d0e23ff2d79ae7228f8') in 0.008090 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/long_bow.fbx
+  artifactKey: Guid(a74a6d75509166e4f8a37d3d294d3900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/long_bow.fbx using Guid(a74a6d75509166e4f8a37d3d294d3900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f558204cb99fdec4f699f2b6fd586cf') in 0.017216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/weapon_market.fbx
+  artifactKey: Guid(e28ceaa25c451bb479f01c21f8503ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/weapon_market.fbx using Guid(e28ceaa25c451bb479f01c21f8503ccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f218f5d6ca5133d1d46e38d182176881') in 0.010455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/crossbow_bolt.fbx
+  artifactKey: Guid(2e194c541af091940aca83e4ebfb7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/crossbow_bolt.fbx using Guid(2e194c541af091940aca83e4ebfb7070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b1097447917e84419bd16b637d0574') in 0.009251 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/maneken.fbx
+  artifactKey: Guid(eb9ca50c76e3a994c88f03502ff873d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/maneken.fbx using Guid(eb9ca50c76e3a994c88f03502ff873d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35e26742817795cb2dc4f5a958382b7c') in 0.009298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Low-Poly Medieval Market/Models/FBX Weapon market/two_handed_hammer.fbx
+  artifactKey: Guid(2e45c1c225716ea4484d5bee1aa394c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Models/FBX Weapon market/two_handed_hammer.fbx using Guid(2e45c1c225716ea4484d5bee1aa394c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c179d9bafe94c09557812fb2536168dd') in 0.009019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 5.669696 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs
+  artifactKey: Guid(feba067cab574dc46aa4d47ea94c14ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs using Guid(feba067cab574dc46aa4d47ea94c14ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c864cb4b667c6df455db2a6324d9ff76') in 0.000403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.067110 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/anvil.prefab
+  artifactKey: Guid(e4bc6212d5190564c92e2e1f443a750b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/anvil.prefab using Guid(e4bc6212d5190564c92e2e1f443a750b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7828583d03cf48b221a4be60aa824521') in 0.053769 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/cleaver.prefab
+  artifactKey: Guid(5a520c173ee63aa478171f69422ddc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/cleaver.prefab using Guid(5a520c173ee63aa478171f69422ddc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f47d7f38831acde8e1039d15b2f7d90') in 0.036447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/basket_02.prefab
+  artifactKey: Guid(cae6c4613f2320a489d33d30973a48ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/basket_02.prefab using Guid(cae6c4613f2320a489d33d30973a48ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e6bb42902f5af64b34cad50abe47f0e') in 0.032690 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/egg_brown.prefab
+  artifactKey: Guid(8c0494df984b65947bcccebd74b1898c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/egg_brown.prefab using Guid(8c0494df984b65947bcccebd74b1898c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f955d5c208350c2a27b6587a14cb9f77') in 0.017042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Armor_stand.prefab
+  artifactKey: Guid(d6069e64bf7bd3b48a0548283484d8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Armor_stand.prefab using Guid(d6069e64bf7bd3b48a0548283484d8fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d499a3599874d2b1bd7300526604b7') in 0.055608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/basin_with_meat.prefab
+  artifactKey: Guid(8e76eadee9b185f4fa619417a094e0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/basin_with_meat.prefab using Guid(8e76eadee9b185f4fa619417a094e0cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ab525ffa4dec5d3da4d7c41ac8c5912') in 0.023962 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 60
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/box_with_fish.prefab
+  artifactKey: Guid(73a9ab3e0680d24459b8cc6ef9809672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/box_with_fish.prefab using Guid(73a9ab3e0680d24459b8cc6ef9809672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8419bfec857c10801f0a6cfa5cab1ef') in 0.033345 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/cookie.prefab
+  artifactKey: Guid(46125fc5251e14f4692a5a3c3f4841c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/cookie.prefab using Guid(46125fc5251e14f4692a5a3c3f4841c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef59e1cd126349e29420b3540ab09e24') in 0.029383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.961333 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/fish_knife.prefab
+  artifactKey: Guid(343d04653a7bd604f91f1395a049ba38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/fish_knife.prefab using Guid(343d04653a7bd604f91f1395a049ba38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46955e1349ee24741d6462ba4bb35bbd') in 0.015937 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/fishing_rod.prefab
+  artifactKey: Guid(f141b8e0322c18647b656ad60a086898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/fishing_rod.prefab using Guid(f141b8e0322c18647b656ad60a086898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987331238433f891f9fedb7ed881c4ca') in 0.022711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/fish_twisted_02.prefab
+  artifactKey: Guid(25cf72de2a9eff945a3eea4ee1c034af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/fish_twisted_02.prefab using Guid(25cf72de2a9eff945a3eea4ee1c034af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d6890ce3ec8d1db19c7dc4898ff91f') in 0.017306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/leather_dressing_frame.prefab
+  artifactKey: Guid(67b057dff1beeba43bfbf108efc29593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/leather_dressing_frame.prefab using Guid(67b057dff1beeba43bfbf108efc29593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1cd8cd2ee8caac7cdea8e750238658') in 0.018471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.349465 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/maneken.prefab
+  artifactKey: Guid(efaab5d802eafe74d9681146cf89b7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/maneken.prefab using Guid(efaab5d802eafe74d9681146cf89b7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23bb8ad4d54f9c665e05b5cdf538d0d7') in 0.028652 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/pastry.prefab
+  artifactKey: Guid(837819cd64a76a44aa33dc4d23d05a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/pastry.prefab using Guid(837819cd64a76a44aa33dc4d23d05a4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ae94681490d45759bbfae5c7e96d33') in 0.016687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/pretzel_box.prefab
+  artifactKey: Guid(c13aa8e236f8e5c43bcd9dc7046042fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/pretzel_box.prefab using Guid(c13aa8e236f8e5c43bcd9dc7046042fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c306e8312af2b797aedb490bb0747420') in 0.029237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 70
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/round_cheese.prefab
+  artifactKey: Guid(24a49be23fa523947bf8c260956b7043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/round_cheese.prefab using Guid(24a49be23fa523947bf8c260956b7043) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eb234953e0b0acfaab89d37a0bd5945') in 0.019733 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/section_01_with_fish.prefab
+  artifactKey: Guid(c393582f3dda77341b5257312849c644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/section_01_with_fish.prefab using Guid(c393582f3dda77341b5257312849c644) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e163ce70228df4689ed69f4b3d031803') in 0.021757 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 64
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/rag.prefab
+  artifactKey: Guid(ceee6e50c0e794d44b60f1f9c6d16a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/rag.prefab using Guid(ceee6e50c0e794d44b60f1f9c6d16a2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e92f0a3c23a08ee887c69b6caf85d435') in 0.018034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/pretzel.prefab
+  artifactKey: Guid(ea07fea80b930b245b670b1d1ded20d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/pretzel.prefab using Guid(ea07fea80b930b245b670b1d1ded20d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7609b83d56ef8ce264f5ee06d24d4256') in 0.021179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/round_bread_basket.prefab
+  artifactKey: Guid(90f15e791bd7a46409914c71c35c27ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/round_bread_basket.prefab using Guid(90f15e791bd7a46409914c71c35c27ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050567cd4394c45fe43c44c861880685') in 0.016605 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.362849 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/section_02.prefab
+  artifactKey: Guid(a66329e049f66ec48914f5e129b1612c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/section_02.prefab using Guid(a66329e049f66ec48914f5e129b1612c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4ee3d7f28b4ffa67182a894ea0e0c46') in 0.019240 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/small_meat.prefab
+  artifactKey: Guid(96c31d99e8d69a04b9eb26a5942a33c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/small_meat.prefab using Guid(96c31d99e8d69a04b9eb26a5942a33c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83c8f03825395c5019f083585e1f462') in 0.015079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/swordfish.prefab
+  artifactKey: Guid(8c40448a6e292ce4aa884b48a55cfc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/swordfish.prefab using Guid(8c40448a6e292ce4aa884b48a55cfc10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92b9e8f1cdcfc1ec7c8d52c7a3fb3d1') in 0.019076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/table_02.prefab
+  artifactKey: Guid(98c36059c3fc374479c36f64599c6ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/table_02.prefab using Guid(98c36059c3fc374479c36f64599c6ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c15d84312d5cd9bcb559b6dbbc5b10') in 0.016425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Table_armor.prefab
+  artifactKey: Guid(4def8cc7383f7b14aae6993ffd09ee97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Table_armor.prefab using Guid(4def8cc7383f7b14aae6993ffd09ee97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedb0b03c5452288cb6e5fa648bac6a7') in 0.034749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 121
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/table_with_bottels.prefab
+  artifactKey: Guid(733f4be6517664b4f96ee130230f641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/table_with_bottels.prefab using Guid(733f4be6517664b4f96ee130230f641f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbc5f151422d670cac2471aa4ee308b') in 0.018925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/section_06.prefab
+  artifactKey: Guid(b5143ad07080ff841b5a6b60c1c0e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/section_06.prefab using Guid(b5143ad07080ff841b5a6b60c1c0e1db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10aa4e48b675b3c6d2b834063b272316') in 0.028158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Table_with_weapon.prefab
+  artifactKey: Guid(52eff72d3b1cec44ebdcabc26791c5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Table_with_weapon.prefab using Guid(52eff72d3b1cec44ebdcabc26791c5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3a69c67bef683a27ea63b1cb9899776') in 0.037399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 118
+========================================================================
+Received Import Request.
+  Time since last request: 0.587445 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/VegetableMarket.prefab
+  artifactKey: Guid(f4b5311c4144f604eb483b849c8e96c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/VegetableMarket.prefab using Guid(f4b5311c4144f604eb483b849c8e96c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba695866e7dfd03de76407ec26c62cd') in 0.014790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/watermelon_box.prefab
+  artifactKey: Guid(4501448e1127cb043afc064a66502fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/watermelon_box.prefab using Guid(4501448e1127cb043afc064a66502fda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28fe93fe00bd857f660e0b92045db63f') in 0.021978 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 53
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/wooden_box_destroyed.prefab
+  artifactKey: Guid(b82d9969aedb66c4b998ad0627711207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/wooden_box_destroyed.prefab using Guid(b82d9969aedb66c4b998ad0627711207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8233a32e69f1b86077b8c0663be118f3') in 0.020625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/wooden_basin.prefab
+  artifactKey: Guid(49db4bdf073f5fe4b8d6d01bad6f7e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/wooden_basin.prefab using Guid(49db4bdf073f5fe4b8d6d01bad6f7e42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed77309549ca592b906bc733e464ac9') in 0.016381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/weapon_market.prefab
+  artifactKey: Guid(bdb02f806a3b44c4bba3eb022914c075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/weapon_market.prefab using Guid(bdb02f806a3b44c4bba3eb022914c075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46381ab972391e70b1391831cf0dc541') in 0.028021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/wooden_bowl_01.prefab
+  artifactKey: Guid(3be4f1eccf329f241a51b9fc1dce06be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/wooden_bowl_01.prefab using Guid(3be4f1eccf329f241a51b9fc1dce06be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea1798e3d1f3256f75bbd87021b6b21') in 0.019185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 3.084609 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables
+  artifactKey: Guid(9044947c42758154e8ea125c3cdceb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables using Guid(9044947c42758154e8ea125c3cdceb18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2202f5755788bd17c503c33cdadd98b1') in 0.000421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.083313 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables/apple_green.prefab
+  artifactKey: Guid(43556b5539144a845b5edfb031914765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables/apple_green.prefab using Guid(43556b5539144a845b5edfb031914765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0754ecfeaa6d5a7ef1a859d23e1a39d4') in 0.024729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables/tomato.prefab
+  artifactKey: Guid(ba0a31dc656c679499efa3bb7dba1d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables/tomato.prefab using Guid(ba0a31dc656c679499efa3bb7dba1d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d148454443831dccbf3710404e27b19') in 0.021052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables/onion.prefab
+  artifactKey: Guid(1ef9cef6908c85e4ab01cd5bf9666027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables/onion.prefab using Guid(1ef9cef6908c85e4ab01cd5bf9666027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c398464ac97e0c89eecc24d420b6a6f4') in 0.022716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables/cucumber.prefab
+  artifactKey: Guid(0dd60896cc22bfa46bfd0a908da1b92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Fruits and vegetables/cucumber.prefab using Guid(0dd60896cc22bfa46bfd0a908da1b92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6382ef35193aba0b05e9df1e38132400') in 0.019412 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 3.709532 seconds.
+  path: Assets/Low-Poly Medieval Market/Readme
+  artifactKey: Guid(be46e4703781542e7864733b75606d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Readme using Guid(be46e4703781542e7864733b75606d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7180caa99a6aba83a7a57ad4e7c4900') in 0.000398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.094904 seconds.
+  path: Assets/Low-Poly Medieval Market/Textures
+  artifactKey: Guid(b0bcbb5526e34914ea314e2491ed05f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Textures using Guid(b0bcbb5526e34914ea314e2491ed05f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc234c2344522ead54ffdc538f0990c5') in 0.000412 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.098381 seconds.
+  path: Assets/Low-Poly Medieval Market/Textures/Bakery market texture.tif
+  artifactKey: Guid(fbcaea10385462040a79c4950d5f65ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Textures/Bakery market texture.tif using Guid(fbcaea10385462040a79c4950d5f65ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59ca00b0c109496d5ebe897fc48b6d89') in 0.026627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Low-Poly Medieval Market/Textures/Latens.tif
+  artifactKey: Guid(c08df9614ce228a45b4c99e0a8dff6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Textures/Latens.tif using Guid(c08df9614ce228a45b4c99e0a8dff6ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4dec8406339808ef6679021dee1a27') in 0.006606 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 49.326329 seconds.
+  path: Assets/Low-Poly Medieval Market/Materials/Bakery matket.mat
+  artifactKey: Guid(8444303dee6f21e4c943696eae671249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Materials/Bakery matket.mat using Guid(8444303dee6f21e4c943696eae671249) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83cfa8790c7dd4ffd7c96a008574d8ae') in 0.031833 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Low-Poly Medieval Market/Materials/Meat market.mat
+  artifactKey: Guid(ee6311e667feb2848a84578e9c3bf6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Materials/Meat market.mat using Guid(ee6311e667feb2848a84578e9c3bf6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1457dc67de074c0b1e4811e824a552c4') in 0.011959 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Low-Poly Medieval Market/Materials/New Material.mat
+  artifactKey: Guid(d088d5cff1357234b80222e3036a2198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Materials/New Material.mat using Guid(d088d5cff1357234b80222e3036a2198) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ad9af4c0a88211afea3fb3edd0a2f32') in 0.008019 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Low-Poly Medieval Market/Materials/Vegetables market.mat
+  artifactKey: Guid(ac2d68933d1867b43a4c7ea56b2e7e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Materials/Vegetables market.mat using Guid(ac2d68933d1867b43a4c7ea56b2e7e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc5bb1e62004822b4cbfda02d547852') in 0.014893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 226.669589 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Environment
+  artifactKey: Guid(03346bbfc6569d445ab97ac0a6846703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Environment using Guid(03346bbfc6569d445ab97ac0a6846703) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0abc22eefed69ca4738b6b63275162') in 0.000374 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.083851 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Environment/AllGrass.prefab
+  artifactKey: Guid(f5de71aef69c62843b610b795151f551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Environment/AllGrass.prefab using Guid(f5de71aef69c62843b610b795151f551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75ce6631f9cc7aa2dc483669ae6fd20b') in 0.133148 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7892
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Environment/trailway_02.prefab
+  artifactKey: Guid(94f6ad5cbfa2225449f7a5b5cac83d5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Environment/trailway_02.prefab using Guid(94f6ad5cbfa2225449f7a5b5cac83d5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93b894cf6d4f0e629bcab0e9cc270683') in 0.008435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Low-Poly Medieval Market/Prefabs/Environment/trailway_03.prefab
+  artifactKey: Guid(10348d885afc4924e9daa5d07655d02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Low-Poly Medieval Market/Prefabs/Environment/trailway_03.prefab using Guid(10348d885afc4924e9daa5d07655d02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8165f09de49c7ba1b0ca0e0c5b8a85a') in 0.007858 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 151.131498 seconds.
+  path: Assets/school
+  artifactKey: Guid(7b8034859a00a2a4f8163b9b8b5721f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school using Guid(7b8034859a00a2a4f8163b9b8b5721f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff801fb0b226bfc0dfa88c2fedefde0') in 0.000453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.959076 seconds.
+  path: Assets/school/Prefabs
+  artifactKey: Guid(9074304b8a19c6748a559b50b1428855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs using Guid(9074304b8a19c6748a559b50b1428855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5016655f8cdb4d2835f27392343c0016') in 0.000393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.887205 seconds.
+  path: Assets/school/Prefabs/road
+  artifactKey: Guid(3971f944cb563c44abff18954cc780c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/road using Guid(3971f944cb563c44abff18954cc780c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4eefd07d1cd6ba2b0411d712b3a097f') in 0.000328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.077148 seconds.
+  path: Assets/school/Prefabs/road/doroga.prefab
+  artifactKey: Guid(5b97ca6353ad429419598d36d1a55e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/road/doroga.prefab using Guid(5b97ca6353ad429419598d36d1a55e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb2cdf124cd09c41d8eab2a03b0fb8a') in 0.006636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/school/Prefabs/road/floor1.prefab
+  artifactKey: Guid(be4105263a3576a4a9d8bb22a5f5ca29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/road/floor1.prefab using Guid(be4105263a3576a4a9d8bb22a5f5ca29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbc0319b70f5431b46b84455281041ea') in 0.006385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/school/Prefabs/road/floor.prefab
+  artifactKey: Guid(405988af1bd38ee4fb92e86058b6c926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/road/floor.prefab using Guid(405988af1bd38ee4fb92e86058b6c926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5cb95024e48a2519378753f5db9096') in 0.006424 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 3.660881 seconds.
+  path: Assets/school/DemoScene
+  artifactKey: Guid(8b61bb79be6daf84fb002396b9e16281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/DemoScene using Guid(8b61bb79be6daf84fb002396b9e16281) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff97f96b2a0062982d78932d04c1f94') in 0.000387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.143207 seconds.
+  path: Assets/school/DemoScene/all_.unity
+  artifactKey: Guid(378551c9dbb787b4f9dd2e04ec1454e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/DemoScene/all_.unity using Guid(378551c9dbb787b4f9dd2e04ec1454e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b356af1126f5c55dfb80dc68ca240ad') in 0.000369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 26.851253 seconds.
+  path: Assets/school/DemoScene/all_objects.unity
+  artifactKey: Guid(c206d02e77fbc3148a269062ea0e8069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/DemoScene/all_objects.unity using Guid(c206d02e77fbc3148a269062ea0e8069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a55ca583e758056433975422dbcb9d') in 0.001072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 620.985429 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(f73e479dd9fbe214c9632c77eacba8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(f73e479dd9fbe214c9632c77eacba8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9276d63061a08e6b6f05258e5c7934e') in 0.000850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.905995 seconds.
+  path: Assets/Prefabs/GameObject.prefab
+  artifactKey: Guid(0e391421c7ee1fd47ad1e0ca80cde813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameObject.prefab using Guid(0e391421c7ee1fd47ad1e0ca80cde813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70a9c9920a5920cb0aebd920e88c56d7') in 0.156145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10845
+========================================================================
+Received Import Request.
+  Time since last request: 4.042846 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3b224cb3e2d382ef8ec1ff7648ce03') in 0.000654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.344 seconds
+Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.866 seconds
+Domain Reload Profiling: 1210ms
+	BeginReloadAssembly (129ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (161ms)
+		LoadAssemblies (216ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (866ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (441ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 1.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3088 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3607.
+Memory consumption went from 131.5 MB to 131.5 MB.
+Total: 5.041900 ms (FindLiveObjects: 0.588300 ms CreateObjectMapping: 0.173100 ms MarkObjects: 4.183100 ms  DeleteObjects: 0.096200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.352 seconds
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.778 seconds
+Domain Reload Profiling: 1131ms
+	BeginReloadAssembly (134ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (159ms)
+		LoadAssemblies (210ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (779ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (461ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (359ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3088 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3610.
+Memory consumption went from 133.4 MB to 133.4 MB.
+Total: 4.231800 ms (FindLiveObjects: 0.478800 ms CreateObjectMapping: 0.283000 ms MarkObjects: 3.388800 ms  DeleteObjects: 0.079800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.352 seconds
+Refreshing native plugins compatible for Editor in 1.50 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.682 seconds
+Domain Reload Profiling: 1033ms
+	BeginReloadAssembly (136ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (149ms)
+		LoadAssemblies (215ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (683ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (393ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (304ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3088 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3613.
+Memory consumption went from 135.4 MB to 135.3 MB.
+Total: 5.866800 ms (FindLiveObjects: 0.582600 ms CreateObjectMapping: 0.302700 ms MarkObjects: 4.897100 ms  DeleteObjects: 0.081600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 156.138147 seconds.
+  path: Assets/school/Prefabs/props
+  artifactKey: Guid(c084cb9a2841b844ebc3f36760cb622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props using Guid(c084cb9a2841b844ebc3f36760cb622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6294bb46ab063c802e3f9e6bd55161f0') in 0.001448 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.119955 seconds.
+  path: Assets/school/Prefabs/props/a door.prefab
+  artifactKey: Guid(c46afe706fb2cde4883f7afaeaa67a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/a door.prefab using Guid(c46afe706fb2cde4883f7afaeaa67a78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fcfba66cafcee01f2968b522200e79c') in 0.075381 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/school/Prefabs/props/book3.prefab
+  artifactKey: Guid(0c6751314cb92ff49980ac423b66ecfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book3.prefab using Guid(0c6751314cb92ff49980ac423b66ecfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316426965499ff4d4d7396ecc3889328') in 0.008644 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/school/Prefabs/props/book11.prefab
+  artifactKey: Guid(26790024c0a59a4459d89f66a856faa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book11.prefab using Guid(26790024c0a59a4459d89f66a856faa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22ddc9bb918d869e6518eb967da43a2') in 0.006347 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/school/Prefabs/props/book5.prefab
+  artifactKey: Guid(e0a660c9a16ebaa409248e8f87be4086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book5.prefab using Guid(e0a660c9a16ebaa409248e8f87be4086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfc3be7b346304d377ea914346ce155e') in 0.007530 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/school/Prefabs/props/book13.prefab
+  artifactKey: Guid(a2d69f66b9cfcbb41adcd641f6757042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book13.prefab using Guid(a2d69f66b9cfcbb41adcd641f6757042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe449eee388ace6668a616cc6713fc2b') in 0.006949 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/school/Prefabs/props/book8.prefab
+  artifactKey: Guid(945770b7f59f57549bb3e854e77a1de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book8.prefab using Guid(945770b7f59f57549bb3e854e77a1de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fecbbec759da752a9fc8803c09a9b9fb') in 0.007018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/school/Prefabs/props/bus.prefab
+  artifactKey: Guid(876481ee83f852b49901155a05d155d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/bus.prefab using Guid(876481ee83f852b49901155a05d155d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1429f0a9b7c4a10bff559bab393b05f3') in 0.010917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/school/Prefabs/props/board2_2.prefab
+  artifactKey: Guid(f16c1a01fe11a1c4499b6704e5007d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/board2_2.prefab using Guid(f16c1a01fe11a1c4499b6704e5007d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1387789acff97608e9ac87287f61b1e1') in 0.007021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/school/Prefabs/props/board2_2 (1).prefab
+  artifactKey: Guid(a92085e8cbdc326489fbf320d2c745d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/board2_2 (1).prefab using Guid(a92085e8cbdc326489fbf320d2c745d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c32b69277b02b5fcb87b234e75df39f') in 0.007507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/school/Prefabs/props/book12.prefab
+  artifactKey: Guid(70c302f8c134149459c53486998e3785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book12.prefab using Guid(70c302f8c134149459c53486998e3785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f5fedf0ebb5172154842d2b1d1ad3b') in 0.007199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/school/Prefabs/props/book2.prefab
+  artifactKey: Guid(72c1249698983ad4988f693663fa1e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book2.prefab using Guid(72c1249698983ad4988f693663fa1e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75a1fdf4d47b47c6414495fd566ff9c') in 0.006686 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/school/Prefabs/props/computer.prefab
+  artifactKey: Guid(95b7030fe576ba84e930b6af82eb2738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/computer.prefab using Guid(95b7030fe576ba84e930b6af82eb2738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5717016c33ebba01d356b5bf313425d7') in 0.007639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/school/Prefabs/props/book10.prefab
+  artifactKey: Guid(131fbc6a61b707e43a1a9cc37ce27999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book10.prefab using Guid(131fbc6a61b707e43a1a9cc37ce27999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42848f6db7d98e8524d86f586a5c3503') in 0.008232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/school/Prefabs/props/chair.prefab
+  artifactKey: Guid(5a652a60006d6ec46980e623412396f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/chair.prefab using Guid(5a652a60006d6ec46980e623412396f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9ef141f297c5810f1c8eea4e60ff32') in 0.006450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/school/Prefabs/props/board1.prefab
+  artifactKey: Guid(883fda0b73369fe41bc2ed262338a937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/board1.prefab using Guid(883fda0b73369fe41bc2ed262338a937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c151c4f539bfbdb1676e679630021640') in 0.007816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/school/Prefabs/props/book4.prefab
+  artifactKey: Guid(e71f88c62ec6ec749b9da3c66033409a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/book4.prefab using Guid(e71f88c62ec6ec749b9da3c66033409a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c50b9c8a5e2abac1295e0b0288207dd9') in 0.006676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/school/Prefabs/props/button.prefab
+  artifactKey: Guid(97ae661c4f5ec684bb00f569e3b354b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/school/Prefabs/props/button.prefab using Guid(97ae661c4f5ec684bb00f569e3b354b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf338dd716a211a76257f5f39eca662') in 0.007442 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.377 seconds
+Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.676 seconds
+Domain Reload Profiling: 1053ms
+	BeginReloadAssembly (139ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (178ms)
+		LoadAssemblies (239ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (676ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (369ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (289ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3088 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.1 KB). Loaded Objects now: 3616.
+Memory consumption went from 137.3 MB to 137.3 MB.
+Total: 3.125300 ms (FindLiveObjects: 0.414400 ms CreateObjectMapping: 0.200300 ms MarkObjects: 2.454600 ms  DeleteObjects: 0.054900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.388 seconds
+Refreshing native plugins compatible for Editor in 1.47 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.665 seconds
+Domain Reload Profiling: 1054ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (191ms)
+		LoadAssemblies (250ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (666ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (360ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (280ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3088 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.2 KB). Loaded Objects now: 3619.
+Memory consumption went from 139.2 MB to 139.2 MB.
+Total: 3.297100 ms (FindLiveObjects: 0.291200 ms CreateObjectMapping: 0.201600 ms MarkObjects: 2.752400 ms  DeleteObjects: 0.050800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: La operación de E/S se anuló por una salida de subproceso o por una solicitud de aplicación.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
