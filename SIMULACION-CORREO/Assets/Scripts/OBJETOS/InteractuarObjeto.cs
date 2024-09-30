@@ -9,14 +9,19 @@ public class InteractuarObjeto : MonoBehaviour
     public GameObject PuntoDeMano;
     public GameObject ObjetoTomado = null;
     public Texture2D Puntero;
-    public GameObject Texto;
+    public GameObject TextoInteractuar;
+    public GameObject TextoPc;
     GameObject Detectado=null;
     bool Cargando=false;
+    bool Escribiendo=false;
+    public ControladorDeCamara camara;
+    public ControlDeJugador jugador;
 
     void Start()
     {
         mask = LayerMask.GetMask("Detectado");
-        Texto.SetActive(false);
+        TextoInteractuar.SetActive(false);
+        TextoPc.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,6 +46,23 @@ public class InteractuarObjeto : MonoBehaviour
                     ObjetoTomado.transform.position = PuntoDeMano.transform.position;
                     ObjetoTomado.gameObject.transform.SetParent(PuntoDeMano.gameObject.transform);
                     Cargando = true;
+                }
+            }
+            if (hit.collider.tag == "Computadoras")
+            {
+                if (Input.GetKey("e") && ObjetoTomado == null)
+                {
+                    camara.Escribiendo();
+                    jugador.Quieto();
+                    Cargando = true;
+                    Escribiendo = true;
+                }
+                if (Input.GetKey(KeyCode.LeftControl) && ObjetoTomado == null)
+                {
+                    camara.NoEscribiendo();
+                    jugador.NoQuieto();
+                    Cargando = false;
+                    Escribiendo=false;
                 }
             }
         }
@@ -88,11 +110,20 @@ public class InteractuarObjeto : MonoBehaviour
 
         if (Detectado&&!Cargando)
         {
-            Texto.SetActive(true);
+            TextoInteractuar.SetActive(true);
         }
         else
         {
-            Texto.SetActive(false);
+            TextoInteractuar.SetActive(false);
+        }
+
+        if (Escribiendo)
+        {
+            TextoPc.SetActive(true);
+        }
+        else
+        {
+            TextoPc.SetActive(false);
         }
     }
 }

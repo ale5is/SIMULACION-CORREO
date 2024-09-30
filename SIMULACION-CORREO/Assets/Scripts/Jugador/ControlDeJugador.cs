@@ -10,6 +10,7 @@ public class ControlDeJugador : MonoBehaviour
     public float fuerzaDeSalto = 2.0F;
     public float gravedad = 9.8F;
     private Vector3 movimiento=Vector3.zero;
+    bool quieto=false;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -18,20 +19,34 @@ public class ControlDeJugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (controller.isGrounded)
+        if (!quieto)
         {
-            float x = Input.GetAxis("Horizontal");
-            float z = Input.GetAxis("Vertical");
-
-            movimiento = transform.right * x + transform.forward * z;
-
-            if (Input.GetButton("Jump"))
+            if (controller.isGrounded)
             {
-                movimiento.y = fuerzaDeSalto;
-            }   
-        }
+                float x = Input.GetAxis("Horizontal");
+                float z = Input.GetAxis("Vertical");
 
-        movimiento.y -= gravedad * Time.deltaTime;
-        controller.Move(movimiento * velocidad * Time.deltaTime); 
+                movimiento = transform.right * x + transform.forward * z;
+
+                if (Input.GetButton("Jump"))
+                {
+                    movimiento.y = fuerzaDeSalto;
+                }
+            }
+
+            movimiento.y -= gravedad * Time.deltaTime;
+            controller.Move(movimiento * velocidad * Time.deltaTime);
+        }
+         
+    }
+    public void Quieto()
+    {
+        quieto = true; 
+    }
+
+    public void NoQuieto()
+    {
+        quieto = false;
     }
 }
+
