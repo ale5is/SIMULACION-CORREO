@@ -44,6 +44,13 @@ public class ControlDeJugador : MonoBehaviour
                 controller.Move(movimiento * velocidad * Time.deltaTime);
             }
         }
+        else
+        {
+            if (Input.GetKey(KeyCode.R))
+            {
+                SceneManager.LoadScene(0);
+            }
+        }
         
 
         if(Input.GetKey(KeyCode.X))
@@ -51,11 +58,7 @@ public class ControlDeJugador : MonoBehaviour
             activar.iniciar=true;
             TextoIniciar.SetActive(false);
         }
-        if (Input.GetKey(KeyCode.R))
-        {
-            SceneManager.LoadScene(0);
-        }
-         
+       
     }
     public void Quieto()
     {
