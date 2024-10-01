@@ -11,6 +11,7 @@ public class InteractuarObjeto : MonoBehaviour
     public Texture2D Puntero;
     public GameObject TextoInteractuar;
     public GameObject TextoPc;
+    
     GameObject Detectado=null;
     bool Cargando=false;
     bool Escribiendo=false;

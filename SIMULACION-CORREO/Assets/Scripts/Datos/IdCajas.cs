@@ -7,4 +7,5 @@ public class IdCajas : MonoBehaviour
     public string Nombre;
     public int Id;
     public string Direccion;
+    public string Tamaño;
 }
