@@ -9,6 +9,7 @@ public class CompararCajas : MonoBehaviour
     public int Id;
     public bool cambiar;
     bool Puntaje;
+
    
     public int puntuacion;
     public int errores;

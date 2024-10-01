@@ -8,7 +8,7 @@ using TMPro;
 public class Temporizador : MonoBehaviour
 {
     public float tiempo;
-    public TextMeshProUGUI texto,puntuacion;
+    public TextMeshProUGUI texto,puntuacion,Terrores;
     public bool iniciar;
     public GameObject TextoFinal;
     public int record,errores;
@@ -39,7 +39,9 @@ public class Temporizador : MonoBehaviour
         else
         {
             record = Drecord.puntuacion;
+            errores=Drecord.errores;
             puntuacion.text = "PUNTUACION: "+record;
+            Terrores.text = "ERRORES: " + errores;
         }
         
     }
