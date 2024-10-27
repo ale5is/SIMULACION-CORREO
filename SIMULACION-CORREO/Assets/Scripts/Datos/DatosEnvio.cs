@@ -10,10 +10,6 @@ public class DatosEnvio : MonoBehaviour
     int Enombre, Eid, Edireccion,Etamaño;
     public Materiales Nmateriales,Imateriales,Dmateriales,Tmateriales;
 
-    void Start()
-    {
-       
-    }
     private void Update()
     {
         if (comparar.cambiar)

@@ -355,6 +355,7 @@
 "Assets/Scripts/BandaDeTransporte/ControladorAnalizador.cs"
 "Assets/Scripts/BandaDeTransporte/ControladorDeBanda.cs"
 "Assets/Scripts/Camara/ControladorDeCamara.cs"
+"Assets/Scripts/ComprobarDatos/Chequear.cs"
 "Assets/Scripts/Datos/CompararCajas.cs"
 "Assets/Scripts/Datos/DatosEnvio.cs"
 "Assets/Scripts/Datos/EditarCajas.cs"
@@ -364,6 +365,7 @@
 "Assets/Scripts/Jugador/ControlDeJugador.cs"
 "Assets/Scripts/OBJETOS/InteractuarObjeto.cs"
 "Assets/Scripts/OBJETOS/TomarObjeto.cs"
+"Assets/Scripts/SpawnCajas.cs"
 "Assets/Scripts/Temporizador.cs"
 "Assets/Scripts/TutorialManager/TutorialManager.cs"
 -langversion:9.0
