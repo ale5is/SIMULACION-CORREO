@@ -7,17 +7,24 @@ using TMPro;
 
 public class Temporizador : MonoBehaviour
 {
-    public float tiempo;
+    public float tiempo, Mtiempo, Ctiempo;
     public TextMeshProUGUI texto,puntuacion,Terrores;
     public bool iniciar;
     public GameObject TextoFinal;
+    public Image imagen;
     public int record,errores;
     public CompararCajas Drecord;
+    public Slider slider;
 
     private void Start()
     {
         iniciar = false;
         TextoFinal.SetActive(false);
+        slider.maxValue = tiempo;
+        slider.value=tiempo;
+        Mtiempo = tiempo / 2;
+        Ctiempo = tiempo / 4;
+
     }
     // Update is called once per frame
     void Update()
@@ -28,8 +35,17 @@ public class Temporizador : MonoBehaviour
             {
                 tiempo -= Time.deltaTime;
                 texto.text = "" + tiempo.ToString("f0");
-                
+                slider.value = tiempo;
+                if (tiempo <= Mtiempo&&tiempo>Ctiempo)
+                {
+                    imagen.color= Color.yellow;
+                }
+                if(tiempo <= Ctiempo)
+                {
+                    imagen.color = Color.red;
+                }
             }
+                
             else
             {
                 iniciar = false;
