@@ -12,12 +12,14 @@ public class ControlDeJugador : MonoBehaviour
     public float gravedad = 9.8F;
     private Vector3 movimiento=Vector3.zero;
     public Temporizador activar;
-    public GameObject TextoIniciar;
+    public GameObject TextoIniciar, TextoMision;
+    bool desaparecer=false;
     bool quieto=false;
     void Start()
     {
         controller = GetComponent<CharacterController>();
         TextoIniciar.SetActive(true);
+        desaparecer=false ;
     }
 
     // Update is called once per frame
@@ -57,6 +59,11 @@ public class ControlDeJugador : MonoBehaviour
         {
             activar.iniciar=true;
             TextoIniciar.SetActive(false);
+            if (!desaparecer)
+            {
+                desaparecer = true;
+                Invoke("Desaparecer", 3);
+            }
         }
        
     }
@@ -68,6 +75,11 @@ public class ControlDeJugador : MonoBehaviour
     public void NoQuieto()
     {
         quieto = false;
+    }
+
+    void Desaparecer()
+    {
+        TextoMision.SetActive(false);
     }
 }
 

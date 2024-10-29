@@ -11,7 +11,9 @@ public class InteractuarObjeto : MonoBehaviour
     public Texture2D Puntero;
     public GameObject TextoInteractuar;
     public GameObject TextoPc;
-    
+    public GameObject TextoSoltar;
+    public GameObject TextoSalir;
+
     GameObject Detectado=null;
     bool Cargando=false;
     bool Escribiendo=false;
@@ -23,6 +25,8 @@ public class InteractuarObjeto : MonoBehaviour
         mask = LayerMask.GetMask("Detectado");
         TextoInteractuar.SetActive(false);
         TextoPc.SetActive(false);
+        TextoSoltar.SetActive(false);
+        TextoSalir.SetActive(false);
     }
 
     // Update is called once per frame
@@ -47,6 +51,7 @@ public class InteractuarObjeto : MonoBehaviour
                     ObjetoTomado.transform.position = PuntoDeMano.transform.position;
                     ObjetoTomado.gameObject.transform.SetParent(PuntoDeMano.gameObject.transform);
                     Cargando = true;
+                    TextoSoltar.SetActive(true);
                 }
             }
             if (hit.collider.tag == "Computadoras")
@@ -57,6 +62,7 @@ public class InteractuarObjeto : MonoBehaviour
                     jugador.Quieto();
                     Cargando = true;
                     Escribiendo = true;
+                    TextoSalir.SetActive(true);
                 }
                 if (Input.GetKey(KeyCode.LeftControl) && ObjetoTomado == null)
                 {
@@ -64,6 +70,7 @@ public class InteractuarObjeto : MonoBehaviour
                     jugador.NoQuieto();
                     Cargando = false;
                     Escribiendo=false;
+                    TextoSalir.SetActive(false);
                 }
             }
         }
@@ -83,6 +90,7 @@ public class InteractuarObjeto : MonoBehaviour
 
                 ObjetoTomado = null;
                 Cargando=false;
+                TextoSoltar.SetActive(false);
             }
         }
     }

@@ -356,6 +356,7 @@
 "Assets/Scripts/BandaDeTransporte/ControladorDeBanda.cs"
 "Assets/Scripts/Camara/ControladorDeCamara.cs"
 "Assets/Scripts/ComprobarDatos/Chequear.cs"
+"Assets/Scripts/Datos/BorrarTexto.cs"
 "Assets/Scripts/Datos/CompararCajas.cs"
 "Assets/Scripts/Datos/DatosEnvio.cs"
 "Assets/Scripts/Datos/EditarCajas.cs"
