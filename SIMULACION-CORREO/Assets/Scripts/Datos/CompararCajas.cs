@@ -9,18 +9,19 @@ public class CompararCajas : MonoBehaviour
     public int Id;
     public bool cambiar;
     bool Puntaje;
-    int Esperar;
+    public int Esperar;
 
     public Chequear chequear,chequear2,chequear3,chequear4;
    
     public int puntuacion;
-    public int errores;
+    public int errores,erroresActuales;
     private void Start()
     {
         Puntaje = true;
         cambiar = true;
         puntuacion = 0;
         Esperar = 0;
+        erroresActuales = 0;
     }
     private void OnTriggerStay(Collider other)
     {
@@ -39,6 +40,7 @@ public class CompararCajas : MonoBehaviour
                     puntuacion--;
                     errores++;
                     chequear.check = 2;
+                    erroresActuales++;
 
                 }
                 if (other.GetComponent<IdCajas>().Id == Id)
@@ -51,6 +53,7 @@ public class CompararCajas : MonoBehaviour
                     puntuacion--;
                     errores++;
                     chequear2.check = 2;
+                    erroresActuales++;
                 }
                 if (other.GetComponent<IdCajas>().Direccion == Direccion)
                 {
@@ -62,6 +65,7 @@ public class CompararCajas : MonoBehaviour
                     puntuacion--;
                     errores++;
                     chequear3.check = 2;
+                    erroresActuales++;
                 }
                 if (other.GetComponent<IdCajas>().Tamaño == Tamaño)
                 {
@@ -73,6 +77,7 @@ public class CompararCajas : MonoBehaviour
                     puntuacion--;
                     errores++;
                     chequear4.check = 2;
+                    erroresActuales++;
                 }
                 if(puntuacion<=0)
                 {
@@ -88,13 +93,14 @@ public class CompararCajas : MonoBehaviour
             {
                 Esperar++;
                 Invoke("Cambiar", 1);
+                
             }
-
         }
     }
     void activar()
     {  
         Puntaje=true;
+        erroresActuales = 0;
     }
 
     void Cambiar()
