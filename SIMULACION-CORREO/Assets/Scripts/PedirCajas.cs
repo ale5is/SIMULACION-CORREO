@@ -33,8 +33,7 @@ public class PedirCajas : MonoBehaviour
                 cantidad++;
                 Instantiate(Caja3, transform.position + new Vector3(0, 0.1F, 0), transform.rotation);
             }
-        }
-        
+        }    
     }
     private void OnTriggerStay(Collider other)
     {

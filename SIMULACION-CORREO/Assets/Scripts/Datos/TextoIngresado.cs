@@ -23,7 +23,10 @@ public class TextoIngresado : MonoBehaviour
     void Update()
     {
         CajaEditable.Nombre = NombreIngresado;
-        CajaEditable.Id = Convert.ToInt32(IdIngresado);
+        if (IdIngresado == "0"|| IdIngresado == "1"||IdIngresado == "2")
+        {
+            CajaEditable.Id = Convert.ToInt32(IdIngresado);
+        }
         CajaEditable.Direccion = DireccionIngresada;
     }
 }

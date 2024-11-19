@@ -365,6 +365,7 @@
 "Assets/Scripts/Datos/EditarCajas.cs"
 "Assets/Scripts/Datos/IdCajas.cs"
 "Assets/Scripts/Datos/Material.cs"
+"Assets/Scripts/Datos/TamañoCaja.cs"
 "Assets/Scripts/Datos/TextoIngresado.cs"
 "Assets/Scripts/Jugador/ControlDeJugador.cs"
 "Assets/Scripts/OBJETOS/CajaCliente.cs"
