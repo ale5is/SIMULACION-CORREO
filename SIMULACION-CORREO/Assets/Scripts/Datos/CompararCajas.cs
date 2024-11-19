@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CompararCajas : MonoBehaviour
 {
+    public TMP_Text Puntuacion;
     public string Nombre, Direccion,Tamaño;
     public int Id;
     public bool cambiar;
     bool Puntaje;
     public int Esperar;
+    public GameObject Subir, Bajar;
 
     public Chequear chequear,chequear2,chequear3,chequear4;
    
-    public int puntuacion;
-    public int errores,erroresActuales;
+    public int puntuacion, puntuacionActual;
+    public int errores,erroresActuales, suma;
     private void Start()
     {
         Puntaje = true;
@@ -22,6 +26,8 @@ public class CompararCajas : MonoBehaviour
         puntuacion = 0;
         Esperar = 0;
         erroresActuales = 0;
+        Subir.SetActive(false);
+        Bajar.SetActive(false);
     }
     private void OnTriggerStay(Collider other)
     {
@@ -32,6 +38,7 @@ public class CompararCajas : MonoBehaviour
                 if (other.GetComponent<IdCajas>().Nombre == Nombre)
                 {
                     puntuacion=puntuacion+2;
+                    puntuacionActual=puntuacionActual+2;
                     chequear.check = 1;
 
                 }
@@ -46,6 +53,7 @@ public class CompararCajas : MonoBehaviour
                 if (other.GetComponent<IdCajas>().Id == Id)
                 {
                     puntuacion = puntuacion + 2;
+                    puntuacionActual = puntuacionActual + 2;
                     chequear2.check = 1;
                 }
                 else
@@ -58,6 +66,7 @@ public class CompararCajas : MonoBehaviour
                 if (other.GetComponent<IdCajas>().Direccion == Direccion)
                 {
                     puntuacion = puntuacion + 2;
+                    puntuacionActual = puntuacionActual + 2;
                     chequear3.check = 1;
                 }
                 else
@@ -70,6 +79,7 @@ public class CompararCajas : MonoBehaviour
                 if (other.GetComponent<IdCajas>().Tamaño == Tamaño)
                 {
                     puntuacion = puntuacion + 2;
+                    puntuacionActual = puntuacionActual + 2;
                     chequear4.check = 1;
                 }
                 else
@@ -85,6 +95,16 @@ public class CompararCajas : MonoBehaviour
                 }
                 
                 Invoke("activar", 3);
+                suma = puntuacionActual - erroresActuales;
+                Puntuacion.text= "Puntuacion:  "+puntuacion.ToString();
+                if (suma > 0)
+                {
+                    Subir.SetActive(true);
+                }
+                else
+                {
+                    Bajar.SetActive(true);
+                }
             }
             
             Puntaje = false;
@@ -100,12 +120,17 @@ public class CompararCajas : MonoBehaviour
     void activar()
     {  
         Puntaje=true;
-        erroresActuales = 0;
+        
     }
 
     void Cambiar()
     {
         cambiar = true;
         Esperar = 0;
+        erroresActuales = 0;
+        puntuacionActual = 0;
+        suma = 0;
+        Subir.SetActive(false);
+        Bajar.SetActive(false);
     }
 }
