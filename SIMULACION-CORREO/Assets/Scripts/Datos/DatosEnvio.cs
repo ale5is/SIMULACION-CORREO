@@ -1,113 +1,78 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class DatosEnvio : MonoBehaviour
 {
-    public string Nombre, Direccion,Tamaño;
-    public CompararCajas comparar;
+    [Header("Datos generados")]
+    public string Nombre;
+    public string Direccion;
+    public string TamaÃ±o;
     public int Id;
-    int Enombre, Eid, Edireccion,Etamaño;
-    public Materiales Nmateriales,Imateriales,Dmateriales,Tmateriales;
 
-    private void Update()
+    [Header("Referencias")]
+    public CompararCajas comparar;
+
+    public Materiales Nmateriales;
+    public Materiales Imateriales;
+    public Materiales Dmateriales;
+    public Materiales Tmateriales;
+
+    private void Start()
     {
-        if (comparar.cambiar)
-        {
-            Nombrar();
-            Identificar();
-            Destino();
-            TipoCaja();
-            comparar.cambiar = false;
-        }
+        GenerarDatos();
     }
 
-    public void Nombrar()
+    // ðŸ”¹ Llamar a este mÃ©todo cada vez que cambie la caja
+    public void GenerarDatos()
     {
-        Enombre=Random.Range(0, 3);
-        if (Enombre == 0)
-        {
-            Nombre = "Carlos";
-            Nmateriales.seleccionar = 0;
-        }
-        if(Enombre==1)
-        {
-            Nombre = "Jorge";
-            Nmateriales.seleccionar = 1;
-        }
+        Nombrar();
+        Identificar();
+        Destino();
+        TipoCaja();
+    }
 
-        if (Enombre == 2)
-        {
-            Nombre = "Maria";
-            Nmateriales.seleccionar = 2;
-        }
+    void Nombrar()
+    {
+        int r = Random.Range(0, 3);
+
+        string[] nombres = { "Carlos", "Jorge", "Maria" };
+
+        Nombre = nombres[r];
+        Nmateriales.seleccionar = r;
+
         comparar.Nombre = Nombre;
     }
 
-    public void Identificar()
+    void Identificar()
     {
-        Eid = Random.Range(0, 3);
-        if (Eid == 0)
-        {
-            Id = 0;
-            Imateriales.seleccionar = 0;
-        }
-        if (Eid == 1)
-        {
-            Id = 1;
-            Imateriales.seleccionar = 1;
-        }
+        int r = Random.Range(0, 3);
 
-        if (Eid == 2)
-        {
-            Id = 2;
-            Imateriales.seleccionar = 2;
-        }
+        Id = r;
+        Imateriales.seleccionar = r;
+
         comparar.Id = Id;
     }
 
-    public void Destino()
+    void Destino()
     {
-        Edireccion = Random.Range(0, 3);
-        if (Edireccion == 0)
-        {
-            Direccion = "Avellaneda";
-            Dmateriales.seleccionar = 0;
-        }
-        if (Edireccion == 1)
-        {
-            Direccion = "Sarandi";
-            Dmateriales.seleccionar = 1;
-        }
+        string[] direcciones = { "Avellaneda", "Sarandi", "Quilmes" };
 
-        if (Edireccion == 2)
-        {
-            Direccion = "Quilmes";
-            Dmateriales.seleccionar = 2;
-        }
+        int r = Random.Range(0, 3);
+
+        Direccion = direcciones[r];
+        Dmateriales.seleccionar = r;
+
         comparar.Direccion = Direccion;
     }
 
-    public void TipoCaja()
+    void TipoCaja()
     {
-        Etamaño = Random.Range(0, 3);
-        if (Etamaño == 0)
-        {
-            Tamaño = "PEQUEÑO";
-            Tmateriales.seleccionar = 0;
-        }
-        if (Etamaño == 1)
-        {
-            Tamaño = "MEDIANO";
-            Tmateriales.seleccionar = 1;
-        }
+        string[] tamaÃ±os = { "PEQUEÃ‘O", "MEDIANO", "GRANDE" };
 
-        if (Etamaño == 2)
-        {
-            Tamaño = "GRANDE";
-            Tmateriales.seleccionar = 2;
-        }
-        comparar.Tamaño = Tamaño;
+        int r = Random.Range(0, 3);
+
+        TamaÃ±o = tamaÃ±os[r];
+        Tmateriales.seleccionar = r;
+
+        comparar.TamaÃ±o = TamaÃ±o;
     }
 }
-

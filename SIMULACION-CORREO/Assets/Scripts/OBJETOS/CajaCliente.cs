@@ -9,7 +9,10 @@ public class CajaCliente : MonoBehaviour
     public string Tamaño;
     public IdCajas caja1, caja2, caja3;
     public CompararCajas compararCajas;
+    public GameObject cliente;
     bool sostener;
+    public Transform puntoSalida;
+    public float velocidad = 2f;
     private void Start()
     {
         Tamaño = "4";
@@ -17,6 +20,8 @@ public class CajaCliente : MonoBehaviour
     }
     private void Update()
     {
+        
+
         if (erroresActuales==0&&Tamaño!="4")
         {
             if (Tamaño == caja1.Tamaño)
@@ -40,6 +45,8 @@ public class CajaCliente : MonoBehaviour
             if (!sostener)
             {
                 sostener = true;
+                Tamaño = "3";
+                cliente.GetComponent<TurnoCliente>().atendido = true;
                 Invoke("Irse", 2);
             }
             
@@ -55,9 +62,14 @@ public class CajaCliente : MonoBehaviour
     }
     void Irse()
     {
-        sostener=false;
+
+        sostener = false;
+        
+        
         Tamaño = "4";
+        
     }
+    
     private void OnTriggerEnter(Collider other)
     { 
         if (other.gameObject.CompareTag("Cajas"))

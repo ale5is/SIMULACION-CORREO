@@ -1,136 +1,128 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CompararCajas : MonoBehaviour
 {
+    [Header("UI")]
     public TMP_Text Puntuacion;
-    public string Nombre, Direccion,Tamaño;
-    public int Id;
-    public bool cambiar;
-    bool Puntaje;
-    public int Esperar;
-    public GameObject Subir, Bajar;
+    public GameObject Subir;
+    public GameObject Bajar;
 
-    public Chequear chequear,chequear2,chequear3,chequear4;
-   
-    public int puntuacion, puntuacionActual;
-    public int errores,erroresActuales, suma;
+    [Header("Datos correctos")]
+    public string Nombre;
+    public string Direccion;
+    public string Tamaño;
+    public int Id;
+
+    [Header("Checks")]
+    public Chequear chequear;
+    public Chequear chequear2;
+    public Chequear chequear3;
+    public Chequear chequear4;
+    public DatosEnvio datos;
+
+    [Header("Puntaje")]
+    public int puntuacion;
+    private int puntuacionActual;
+    public int erroresActuales;
+
+    private bool puedePuntuar = true;
+    private bool esperando;
+
     private void Start()
     {
-        Puntaje = true;
-        cambiar = true;
         puntuacion = 0;
-        Esperar = 0;
+        puntuacionActual = 0;
         erroresActuales = 0;
+
         Subir.SetActive(false);
         Bajar.SetActive(false);
+
+        ActualizarUI();
     }
+
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Cajas"))
+        if (other.CompareTag("Cajas"))
         {
-            if (Puntaje)
-            {
-                if (other.GetComponent<IdCajas>().Nombre == Nombre)
-                {
-                    puntuacion=puntuacion+2;
-                    puntuacionActual=puntuacionActual+2;
-                    chequear.check = 1;
+            IdCajas caja = other.GetComponent<IdCajas>();
+            if (caja == null) return;
 
-                }
-                else
-                {
-                    puntuacion--;
-                    errores++;
-                    chequear.check = 2;
-                    erroresActuales++;
+            Evaluar(caja);
+            Debug.Log("Algo entro al trigger: " + other.name);
 
-                }
-                if (other.GetComponent<IdCajas>().Id == Id)
-                {
-                    puntuacion = puntuacion + 2;
-                    puntuacionActual = puntuacionActual + 2;
-                    chequear2.check = 1;
-                }
-                else
-                {
-                    puntuacion--;
-                    errores++;
-                    chequear2.check = 2;
-                    erroresActuales++;
-                }
-                if (other.GetComponent<IdCajas>().Direccion == Direccion)
-                {
-                    puntuacion = puntuacion + 2;
-                    puntuacionActual = puntuacionActual + 2;
-                    chequear3.check = 1;
-                }
-                else
-                {
-                    puntuacion--;
-                    errores++;
-                    chequear3.check = 2;
-                    erroresActuales++;
-                }
-                if (other.GetComponent<IdCajas>().Tamaño == Tamaño)
-                {
-                    puntuacion = puntuacion + 2;
-                    puntuacionActual = puntuacionActual + 2;
-                    chequear4.check = 1;
-                }
-                else
-                {
-                    puntuacion--;
-                    errores++;
-                    chequear4.check = 2;
-                    erroresActuales++;
-                }
-                if(puntuacion<=0)
-                {
-                    puntuacion = 0;
-                }
-                
-                Invoke("activar", 3);
-                suma = puntuacionActual - erroresActuales;
-                Puntuacion.text= "Puntuacion:  "+puntuacion.ToString();
-                if (suma > 0)
-                {
-                    Subir.SetActive(true);
-                }
-                else
-                {
-                    Bajar.SetActive(true);
-                }
-            }
-            
-            Puntaje = false;
             Destroy(other.gameObject);
-            if (Esperar==0)
+            puedePuntuar = false;
+
+            CancelInvoke(nameof(Activar));
+            Invoke(nameof(Activar), 3f);
+
+            if (!esperando)
             {
-                Esperar++;
-                Invoke("Cambiar", 1);
-                
+                esperando = true;
+                Invoke(nameof(Cambiar), 1f);
             }
         }
-    }
-    void activar()
-    {  
-        Puntaje=true;
         
+
+       
+    }
+
+    void Evaluar(IdCajas caja)
+    {
+        puntuacionActual = 0;
+        erroresActuales = 0;
+
+        Comparar(caja.Nombre == Nombre, chequear);
+        Comparar(caja.Id == Id, chequear2);
+        Comparar(caja.Direccion == Direccion, chequear3);
+        Comparar(caja.Tamaño == Tamaño, chequear4);
+
+        puntuacion += puntuacionActual - erroresActuales;
+
+        if (puntuacion < 0)
+            puntuacion = 0;
+
+        if (puntuacionActual - erroresActuales > 0)
+            Subir.SetActive(true);
+        else
+            Bajar.SetActive(true);
+
+        ActualizarUI();
+    }
+
+    void Comparar(bool correcto, Chequear check)
+    {
+        if (correcto)
+        {
+            puntuacionActual += 2;
+            check.check = 1;
+        }
+        else
+        {
+            erroresActuales++;
+            check.check = 2;
+        }
+    }
+
+    void Activar()
+    {
+        puedePuntuar = true;
     }
 
     void Cambiar()
     {
-        cambiar = true;
-        Esperar = 0;
-        erroresActuales = 0;
+        esperando = false;
         puntuacionActual = 0;
-        suma = 0;
+        erroresActuales = 0;
+
         Subir.SetActive(false);
         Bajar.SetActive(false);
+    }
+
+    void ActualizarUI()
+    {
+        datos.GenerarDatos();
+        Puntuacion.text = "Puntuación: " + puntuacion;
     }
 }

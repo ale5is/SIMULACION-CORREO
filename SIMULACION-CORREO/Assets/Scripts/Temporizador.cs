@@ -54,7 +54,7 @@ public class Temporizador : MonoBehaviour
         else
         {
             record = Drecord.puntuacion;
-            errores=Drecord.errores;
+            errores=Drecord.erroresActuales;
             puntuacion.text = "PUNTUACION: "+record;
             Terrores.text = "ERRORES: " + errores;
         }

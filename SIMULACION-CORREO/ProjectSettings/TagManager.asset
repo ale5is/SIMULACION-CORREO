@@ -7,6 +7,7 @@ TagManager:
   - Cajas
   - Computadoras
   - CajaCliente
+  - Turno
   layers:
   - Default
   - TransparentFX
