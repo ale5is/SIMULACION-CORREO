@@ -15,6 +15,7 @@ public class ControlDeJugador : MonoBehaviour
     public GameObject TextoIniciar, TextoMision;
     bool desaparecer=false;
     bool quieto=false;
+    public int escena;
     void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -50,7 +51,7 @@ public class ControlDeJugador : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.R))
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(escena);
             }
         }
         
