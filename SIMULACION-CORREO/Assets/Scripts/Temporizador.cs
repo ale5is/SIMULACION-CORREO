@@ -1,63 +1,108 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Temporizador : MonoBehaviour
 {
-    public float tiempo, Mtiempo, Ctiempo;
-    public TextMeshProUGUI texto,puntuacion,Terrores;
-    public bool iniciar;
+    [Header("Tiempo")]
+    public float tiempo;
+    private float tiempoMedio;
+    private float tiempoCritico;
+
+    [Header("UI")]
+    public TextMeshProUGUI texto;
+    public TextMeshProUGUI puntuacion;
+    public TextMeshProUGUI Terrores;
     public GameObject TextoFinal;
     public Image imagen;
-    public int record,errores;
-    public CompararCajas Drecord;
     public Slider slider;
 
-    private void Start()
+    [Header("Estado")]
+    public bool iniciar;
+
+    [Header("Puntuación")]
+    public int record;
+    public int errores;
+    public CompararCajas Drecord;
+
+
+    void Start()
     {
         iniciar = false;
-        TextoFinal.SetActive(false);
-        slider.maxValue = tiempo;
-        slider.value=tiempo;
-        Mtiempo = tiempo / 2;
-        Ctiempo = tiempo / 4;
 
+        TextoFinal.SetActive(false);
+
+        slider.maxValue = tiempo;
+        slider.value = tiempo;
+
+        tiempoMedio = tiempo / 2f;
+        tiempoCritico = tiempo / 4f;
     }
-    // Update is called once per frame
+
+
     void Update()
     {
         if (iniciar)
         {
-            if (tiempo >= 0)
-            {
-                tiempo -= Time.deltaTime;
-                texto.text = "" + tiempo.ToString("f0");
-                slider.value = tiempo;
-                if (tiempo <= Mtiempo&&tiempo>Ctiempo)
-                {
-                    imagen.color= Color.yellow;
-                }
-                if(tiempo <= Ctiempo)
-                {
-                    imagen.color = Color.red;
-                }
-            }
-                
-            else
-            {
-                iniciar = false;
-                TextoFinal.SetActive(true);
-            }
+            ActualizarTemporizador();
         }
         else
         {
-            record = Drecord.puntuacion;
-            errores=Drecord.erroresActuales;
-            puntuacion.text = "PUNTUACION: "+record;
-            Terrores.text = "ERRORES: " + errores;
+            ActualizarPuntuacion();
         }
-        
+    }
+
+
+    void ActualizarTemporizador()
+    {
+        if (tiempo >= 0)
+        {
+            tiempo -= Time.deltaTime;
+
+            ActualizarUI();
+            ActualizarColor();
+        }
+
+        if (tiempo < 0)
+        {
+            FinalizarTemporizador();
+        }
+    }
+
+
+    void ActualizarUI()
+    {
+        texto.text = tiempo.ToString("f0");
+        slider.value = tiempo;
+    }
+
+
+    void ActualizarColor()
+    {
+        if (tiempo <= tiempoCritico)
+        {
+            imagen.color = Color.red;
+        }
+        else if (tiempo <= tiempoMedio)
+        {
+            imagen.color = Color.yellow;
+        }
+    }
+
+
+    void FinalizarTemporizador()
+    {
+        iniciar = false;
+        TextoFinal.SetActive(true);
+    }
+
+
+    void ActualizarPuntuacion()
+    {
+        record = Drecord.puntuacion;
+        errores = Drecord.erroresActuales;
+
+        puntuacion.text = "PUNTUACION: " + record;
+        Terrores.text = "ERRORES: " + errores;
     }
 }

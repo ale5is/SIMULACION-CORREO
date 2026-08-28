@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: fa95802f80bd745cfb5e9c89f7e22341, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 04dafbf1b9253f644acbf0c89b861393, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.33654982, g: 0.81813616, b: 0.9303531, a: 1}
+  m_IndirectSpecularColor: {r: 0.31289506, g: 0.62950665, b: 0.85859853, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4612,6 +4612,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8138824302623788587}
     - target: {fileID: 4150207721903562003, guid: a8221213b05e45f4ca96312c2e0174e7, type: 3}
+      propertyPath: tiempo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4150207721903562003, guid: a8221213b05e45f4ca96312c2e0174e7, type: 3}
       propertyPath: Drecord
       value: 
       objectReference: {fileID: 8465111446196917691}
@@ -4639,6 +4643,10 @@ PrefabInstance:
       propertyPath: TextoIniciar
       value: 
       objectReference: {fileID: 695136371103001644}
+    - target: {fileID: 7006928692095816877, guid: a8221213b05e45f4ca96312c2e0174e7, type: 3}
+      propertyPath: fuerzaDeSalto
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7480391693876837389, guid: a8221213b05e45f4ca96312c2e0174e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 37.59
