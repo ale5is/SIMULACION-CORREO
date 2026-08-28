@@ -1,49 +1,57 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ControladorDeCamara : MonoBehaviour
 {
-    public float sensibilidadDeRaton=80f;
+    [Header("Configuración")]
+    public float sensibilidadDeRaton = 80f;
     public Transform CuerpoDeJugador;
-    float RotacionX = 0;
-    bool escribir=false;
+
+    [Header("Estado del juego")]
     public Temporizador activar;
+
+    private float rotacionX = 0f;
+    private bool escribiendo = false;
+
+
     void Start()
     {
-       Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if (activar.iniciar)
-        {
-            if (!escribir)
-            {
-                float ratonX = Input.GetAxis("Mouse X") * sensibilidadDeRaton * Time.deltaTime;
-                float ratonY = Input.GetAxis("Mouse Y") * sensibilidadDeRaton * Time.deltaTime;
+        if (!activar.iniciar || escribiendo)
+            return;
 
-                RotacionX -= ratonY;
-                RotacionX = Mathf.Clamp(RotacionX, -90f, 90);
-
-                transform.localRotation = Quaternion.Euler(RotacionX, 0f, 0f);
-
-                CuerpoDeJugador.Rotate(Vector3.up * ratonX);
-            }
-        }
+        MoverCamara();
     }
+
+
+    void MoverCamara()
+    {
+        float ratonX = Input.GetAxis("Mouse X") * sensibilidadDeRaton * Time.deltaTime;
+        float ratonY = Input.GetAxis("Mouse Y") * sensibilidadDeRaton * Time.deltaTime;
+
+        rotacionX -= ratonY;
+        rotacionX = Mathf.Clamp(rotacionX, -90f, 90f);
+
+        transform.localRotation = Quaternion.Euler(rotacionX, 0f, 0f);
+
+        CuerpoDeJugador.Rotate(Vector3.up * ratonX);
+    }
+
 
     public void Escribiendo()
     {
+        escribiendo = true;
         Cursor.lockState = CursorLockMode.Confined;
-        escribir = true;
-        
     }
+
+
     public void NoEscribiendo()
     {
+        escribiendo = false;
         Cursor.lockState = CursorLockMode.Locked;
-        escribir = false;
-        
     }
 }
